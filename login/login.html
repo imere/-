@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="main" ng-controller="loginCtrl">
+<head>
+	<meta name="view-port" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" contenet="IE=Edge">
+	<link rel="stylesheet" href="login.css">
+	<script src="/src/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
+	<title>登录</title>
+</head>
+<body>
+	<form name="form" method="POST" novalidate>
+	<fieldset>
+		<legend>登录</legend>
+		<div class="input-field">
+			<p>
+				<input id="user" type="text" name="user" maxlength="11" placeholder="用户名" autocomplete='off' required>
+				<br><span class="hint"></span>
+			</p>
+			<p>
+				<input id="pass" type="password" name="pass" maxlength="16" placeholder="密码" required>
+				<br><span class="hint"></span>
+			</p>
+			<p>
+				<input id="email" type="email" name="email" placeholder="邮箱(注册必填,登录免填)" autocomplete='off'>
+				<br><span class="hint"></span>
+			</p>
+		</div>
+		<div class="button-field">
+			<input id="login" type="button" value="登录/注册" ng-click="auth()">
+		</div>
+	</fieldset>
+	</form>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>	
+</body>	
+<script src="login.js"></script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="main" ng-controller="pushCtrl">
+<head>
+	<meta name="view-port" content="width=device-width">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" contenet="IE=Edge">
+	<link rel="stylesheet" href="push.css">
+	<script src="/src/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
+	<title>发布信息</title>
+</head>
+<body>
+	<div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+       	<div class="rect4"></div>
+        <div class="rect5"></div>
+    	</div>
+
+	<form name="form" method="POST" novalidate>
+	<fieldset>
+		<legend>信息登记</legend>
+		<div class="input-field">
+			<div>
+				<input id="user" type="text" name="user" maxlength="11" placeholder="姓名" autocomplete="off" required>
+				<br><span class="hint"></span>
+			</div>
+			<div>
+				<input id="id" type="text" name="id" maxlength="25" placeholder="身份证" required>
+				<br><span class="hint"></span>
+			</div>
+			<div>
+				<input id="tel" type="tel" maxlength="11" placeholder="联系电话" required>
+				<br><span class="hint"></span>
+			</div>
+		</div>
+		<div class="button-field">
+			<input id="login" type="button" value="提交" ng-click="check()">
+		</div>
+	</fieldset>
+	</form>
+</body>	
+<script src="push.js"></script>
+</html>
