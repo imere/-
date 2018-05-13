@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
   <script src='src/jquery-3.3.1.min.js'></script>
   <script src='https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js'></script>
-  <!--script src='src/angular.min.bb.js'></script-->
 </head>
 
 <body>
